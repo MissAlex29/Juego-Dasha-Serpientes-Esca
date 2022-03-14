@@ -69,8 +69,8 @@ let position = 0;
 let darkBox = false;
 
 //Posición de las escaleras
-/*ladders = [{start: 2,end: 22},{start: 50,end: 34},{start: 10,end: 44},
-{start: 61,end: 19},{start: 70,end: 83},{start: 78,end: 4}];*/
+ladders = [{start: 2,end: 22},{start: 50,end: 34},{start: 10,end: 44},
+{start: 61,end: 19},{start: 70,end: 83},{start: 78,end: 4}];
 
 for (var y = height; y >= 0; y--) {
   let row = [];
@@ -111,7 +111,7 @@ drawBoard = () => {
 
 
   //Dibuja las escaleras 
-  /*ladders.forEach(ladder => {
+  ladders.forEach(ladder => {
     //let start = 0;
     let startPos = { x: 0, y: 0 };
     let endPos = { x: 0, y: 0 };
@@ -134,7 +134,7 @@ drawBoard = () => {
 
     //if it is a ladder then it is white, otherwise snake is green
     drawLine({ color: isLadder ? "white" : "green", startPos, endPos });
-  });*/
+  });
 
 
 
@@ -144,7 +144,7 @@ drawBoard = () => {
 
 
 //Asigna color a las escaleras
-/*function drawLine({ color, startPos, endPos }) {
+function drawLine({ color, startPos, endPos }) {
   var canvas = document.getElementById("canvas");
   var ctx = canvas.getContext("2d");
   ctx.beginPath();
@@ -155,7 +155,7 @@ drawBoard = () => {
   ctx.stroke();
 
 
-}*/
+}
 drawBoard();
 
 function preload(){
